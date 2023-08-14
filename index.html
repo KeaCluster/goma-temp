@@ -14,47 +14,16 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Cabin:ital@0;1&family=Montserrat:ital,wght@0,300;0,400;1,400&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="./src/styles/main.css">
 
-
-    <style>
-        body {
-            height: 100vh;
-            width: 100vw;
-            margin: 0;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            font-family: 'Cabin', sans-serif;
-        }
-
-        h1 {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 300;
-        }
-
-        h2 {
-            font-weight: 300;
-        }
-
-        video {
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 100vh;
-            width: 100vw;
-            object-fit: cover;
-            z-index: 0;
-        }
-    </style>
+    <script async defer src="./src/js/main.js"></script>
 </head>
 
 <body>
 
     <div class="main" id="main">
-        <video autoplay muted loop autoplay playsinline>
-            <source src="public/videos/Banner_black.mp4" type="video/mp4" />
+        <video id="videoPlayer" autoplay muted loop autoplay playsinline>
+            <source id="videoSource" src="public/videos/Banner_black.mp4" type="video/mp4" />
         </video>
     </div>
 
